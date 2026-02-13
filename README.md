@@ -8,7 +8,7 @@ This project demonstrates real-world frontend engineering skills including API i
 
 ## 🚀 Live Demo
 
-👉 Deploy link (https://react-product-dashboard-one.vercel.app/)
+👉 Deploy link:- https://react-product-dashboard-one.vercel.app/
 
 ---
 
