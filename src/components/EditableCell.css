@@ -1,0 +1,14 @@
+.edit-input {
+  border: 1px solid transparent;
+  background: transparent;
+  padding: 6px 8px;
+  border-radius: 6px;
+  width: 100%;
+  transition: 0.2s;
+}
+
+.edit-input:focus {
+  outline: none;
+  border: 1px solid #4f7cff;
+  background: #eef3ff;
+}
