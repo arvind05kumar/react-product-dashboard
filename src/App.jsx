@@ -13,9 +13,7 @@ function App() {
   const [search, setSearch] = useState("");
   const [sortType, setSortType] = useState("");
 
-  /* =================================
-     LOAD PRODUCTS (Infinite Scroll)
-  ================================= */
+  //Loading Products (Infinite Scroll):-
   const loadProducts = useCallback(async () => {
     if (loading) return;
 
@@ -37,9 +35,7 @@ function App() {
     loadProducts();
   }, []);
 
-  /* =================================
-     EDIT TITLE + SAVE TO LOCAL STORAGE
-  ================================= */
+  //Editable Title & Save to Local Storage:-
   const handleTitleChange = (id, newTitle) => {
     const updated = products.map((product) =>
       product.id === id ? { ...product, title: newTitle } : product
@@ -51,9 +47,7 @@ function App() {
     localStorage.setItem("products", JSON.stringify(updated));
   };
 
-  /* =================================
-     LOAD FROM LOCAL STORAGE ON START
-  ================================= */
+  //Loading from local storage on START
   useEffect(() => {
     const saved = localStorage.getItem("products");
     if (saved) {
@@ -61,9 +55,7 @@ function App() {
     }
   }, []);
 
-  /* =================================
-     SEARCH + SORT LOGIC
-  ================================= */
+  //SEARCH + SORT LOGIC
   const filteredProducts = [...products]
     .filter((p) =>
       p.title.toLowerCase().includes(search.toLowerCase())
@@ -76,9 +68,7 @@ function App() {
 
   const bottomRef = useInfiniteScroll(loadProducts, loading);
 
-  /* =================================
-     UI
-  ================================= */
+  //UI:-
   return (
     <div className="app-container">
       <h2 className="title">📦 Product Dashboard</h2>

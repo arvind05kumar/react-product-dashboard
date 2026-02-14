@@ -1,6 +1,4 @@
-/* ===============================
-   Global Reset
-================================ */
+/*Global Reset*/
 * {
   margin: 0;
   padding: 0;
@@ -9,27 +7,21 @@
     sans-serif;
 }
 
-/* ===============================
-   Body
-================================ */
+/*Body*/
 body {
   background: #f6f8fb;
   color: #222;
   line-height: 1.5;
 }
 
-/* ===============================
-   App Layout
-================================ */
+/*App Layout*/
 .app-container {
   max-width: 1100px;
   margin: 40px auto;
   padding: 20px;
 }
 
-/* ===============================
-   Page Title
-================================ */
+/*Page Title*/
 .title {
   font-size: 26px;
   font-weight: 600;
@@ -37,9 +29,7 @@ body {
   color: #222;
 }
 
-/* ===============================
-   Scrollbar (optional polish)
-================================ */
+/*Scrollbar*/
 ::-webkit-scrollbar {
   width: 8px;
 }
@@ -53,9 +43,7 @@ body {
   background: #b8bcc2;
 }
 
-/* ===============================
-   Table text defaults
-================================ */
+/*Table text defaults*/
 table {
   font-size: 14px;
 }
